@@ -54,7 +54,7 @@ form {
   background-color: #fafafc;
   min-height: 300px;
   margin-top: 38px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   padding: 64px;
   display: flex;
   flex-direction: column;
@@ -176,4 +176,37 @@ fieldset {
 
 .checkbox__wrapper input:focus + label::before {
   outline: 2px solid #000;
+}
+
+footer{
+  background: #F0F0F4;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin-bottom: 100px;
+  border-top:1px solid #D6D6D6;
+  border-radius: 0 0 8px 8px;
+}
+
+footer .btn {
+  height: 56px;
+  padding: 15px 40px;
+  background: #04D361;
+  border-radius: 8px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+footer .btn:hover {
+  background: #22c55e;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
 }
